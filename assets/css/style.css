@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  overflow-y: scroll;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-wallpaper {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(100, 28, 40);
+  background-image: url(../images/Rick.png), url(../images/background.jpg);
+  background-size: 100px, cover;
+  background-position: 98% 16%, center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay {
+  background-color: rgb(22, 4, 4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  opacity: 0.7;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+
+.anchor {
+  position: relative;
+}
+
+.anchor > span {
+  position: absolute;
+  top: -100px;
+}
+
+.inner-nav {
+  margin-bottom: 1em;
+}
+
+.content {
+  background-color: brown;
+  margin-bottom: 100px;
+  margin-top: 160px;
+  color: rgb(255, 255, 255);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(247, 203, 203);
+  color: brown;
+}
+
+.header {
+  background-color: rgb(247, 203, 203);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: brown;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar-link {
+  border: 2px solid brown;
+  padding: 1em;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: brown;
+}
+
+.navbar-link:hover {
+  background-color: brown;
+  color: antiquewhite;
+  transform: scale(1.15);
+  transition: 0.9s;
+}
+
+.navbar-link.active {
+  background-color: brown;
+  color: white;
+}
+
+.articles-comment {
+  color: rgb(160, 160, 150);
+}
+
+.articles-comment:hover {
+  color: aquamarine;
+}
+
+.new-articles-read {
+  color: antiquewhite;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.new-articles-read:hover {
+  color: aquamarine;
+}
+
+.new-articles-link {
+  border-bottom: 0.7px solid antiquewhite;
+  color: aquamarine;
+}
+
+.new-articles {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+}
+
+.h1-articles {
+  text-align: center;
+}
+
+.p-articles::first-letter {
+  color: brown;
+  font-size: 20px;
+  font-weight: 900;
+  float: left;
+  border: 2px solid beige;
+  background-color: rgb(240, 186, 186);
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.new::after {
+  content: "new";
+  background: orange;
+  color: aliceblue;
+  font-size: 70%;
+  padding: 2px;
+  margin-left: 2px;
+}
+
+.sublist {
+  list-style: outside
+    url(https://findicons.com/files/icons/2625/google_plus_interface_icons/18/emoticon_smile.png);
+  font-size: 15px;
+  background-color: brown;
+  color: rgb(238, 216, 216);
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 10px 10px 37px;
+}
+
+.list-catalog {
+  list-style: outside
+    url(https://findicons.com/files/icons/731/green_and_blue/32/emoticons.png);
+  font-size: 30px;
+  background-color: rgb(229, 192, 192);
+  color: brown;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 2em;
+}
+
+.link-gallery a {
+  color: rgb(245, 216, 216);
+}
+
+.bg-wallpaper-gallery {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(100, 28, 40);
+  background-image: url(../images/Rick.png), url(../images/seamless_texture.jpg);
+  background-size: 100px, 700px;
+  background-position: 98% 16%, center;
+  background-repeat: no-repeat, repeat;
+}
+
+.bg-overlay {
+  background-color: rgb(22, 4, 4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  opacity: 0.7;
+}
+
+.slide-gallery {
+  border: 20px solid rgb(241, 202, 202);
+  margin: 10px;
+}
+
+.slide-gallery:hover {
+  border: 20px solid transparent;
+  margin: 10px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 20px;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: brown;
+  background-color: white;
+  border: 1px solid;
+}
+
+.btn:hover {
+  color: white;
+  background-color: brown;
+}
+
+.form-style {
+  background-color: rgb(247, 203, 203);
+  color: brown;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: rgb(247, 203, 203);
+  text-transform: uppercase;
+}
+
+.input-name {
+  text-transform: capitalize;
+}
+
+.container--gallery {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sub-link {
+  color: antiquewhite;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.sub-link:hover {
+  color: aquamarine;
+}
+
+.return {
+  color: aquamarine;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.return:hover {
+  color: antiquewhite;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<div class="bg-wallpaper"></div>
+<div class="bg-overlay"></div>
+<header class="header">
+  <div class="container">
+
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="../index.html">Главная</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="articles.html">Статьи</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link active" href="contacts.html">Контакты</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="gallery.html">Галерея</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="page-nav.html">Навигация</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="registration.html">Регистрация</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+<div class="content container">
+  <h1>Контакты</h1>
+  <div class="text-center">
+    <h2>График работы</h2>
+    <p>Пн.-Пт.: 9:00-19:00 <br>
+      Сб.-Вс.: 10:00-15:00</p>
+  </div>
+  <div class="text-center">
+    <h2>Контактные телефоны</h2>
+    <p>+380-73-104-99-24,
+      +380-50-104-99-24,
+      +380-67-104-99-24</p>
+  </div>
+  <div class="text-center">
+    <h2>Адрес</h2>
+    <p>г. Харьков <br>
+      улица Академика Павлова 120 <br>
+      2 этаж, офис 218.</p>
+  </div>
+  <div class="text-center">
+    <h2>Как нас найти</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2960734766075!2d36.31232831513566!3d50.005805627185154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a75601fd904b%3A0x47e0016b95525076!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCf0LDQstC70L7QstCwLCAxMjAsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1625319608455!5m2!1sru!2sua"
+        width="600" height="450" style="border:0;" loading="lazy"></iframe>
+  </div>
+
+  <h2 class="text-center">Обратная связь</h2>
+  <form action="contacts.php" method="get">
+    <fieldset class="form-style">
+      <div class="form-group">
+        <label class="label-form" for="name">Ваше имя:</label>
+        <input class="input-name" name="name" id="name" type="text" required placeholder="Введите имя">
+      </div>
+      <div class="form-group">
+        <label class="label-form" for="number">Контактный телефон:</label>
+        <input name="number" id="number" type="tel" minlength="13" maxlength="13" required
+               placeholder="+380-ХХ-ХХХ-ХХ-ХХ">
+      </div>
+      <div class="form-group">
+        <label class="label-form" for="email">Email:</label>
+        <input name="email" id="email" type="email" required placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label class="label-form" for="question">Вопрос</label>
+        <textarea name="question" id="question" cols="30" rows="3" required
+                  placeholder="Задайте нам свой вопрос"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn" type="submit">Отправить</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    &copy; VickaMarkina
+  </div>
+</footer>
+</body>
+
+</html>
